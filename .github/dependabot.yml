@@ -1,0 +1,20 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: HtmlAgilityPack
+    versions:
+    - 1.11.30
+  - dependency-name: NLog
+    versions:
+    - 4.7.7
+  - dependency-name: NLog.Web.AspNetCore
+    versions:
+    - 4.10.0
+  - dependency-name: Microsoft.NET.Test.Sdk
+    versions:
+    - 16.8.3
